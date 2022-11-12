@@ -7,9 +7,11 @@ def main(data:str):
         int: return answer
     """
     l = 0
-    for i in data:
-        if i.isdigit():
-            if int(i) > l:
-                l = int(i)
+    print(data.split())
+    for i in data.split():
 
+        if i.isdigit():
+            if float(i) > l:
+                l = float(i)
+    return l
 print(main(open('txt_file/data08.txt').read()))
