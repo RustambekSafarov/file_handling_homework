@@ -10,8 +10,9 @@ def main(data:str):
     y = []
     for i in data:
         for x in i:
-            d += 1
-        y.append(d-1)
+            if x != '\n':
+                d += 1
+        y.append(d)
         d = 0
             
     return y
