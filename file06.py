@@ -7,14 +7,17 @@ def main(data:str):
         list: return answer
     """
     d = 0
+    
     y = []
     for i in data:
-        for x in i:
-            if x != '\n':
-                d += 1
-        y.append(d)
-        d = 0
+        if i != '\n':
+            print(i)
+            d += 1
+        if i == '\n':
+            y.append(d)
+            d = 0
+        
             
     return y
 # Read data from file
-print(main(open('txt_file/data06.txt').readlines()))
+print(main(open('txt_file/data06.txt').read()))
