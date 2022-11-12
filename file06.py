@@ -13,7 +13,7 @@ def main(data:str):
         if i != '\n':
             print(i)
             d += 1
-        if i == '\n':
+        if i == '\n' or i == '':
             y.append(d)
             d = 0
         
