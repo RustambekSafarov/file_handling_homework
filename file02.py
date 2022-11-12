@@ -9,7 +9,7 @@ def main(data:str):
     x = data.read()
     # for i in data.split():
         
-    return data.write(x)
+    return data.write(str(x))
 
 # Read data from file
 print(main(open('txt_file/data02.txt','r+')))
