@@ -6,18 +6,9 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    d = 0
-    
     y = []
-    for i in data:
-        if i != '\n':
-            print(i)
-            d += 1
-        if i == '\n' or i == '':
-            y.append(d)
-            d = 0
-        
-            
+    for i in data.split():
+        y.append(len(i))
     return y
 # Read data from file
 print(main(open('txt_file/data06.txt').read()))
