@@ -10,7 +10,7 @@ def main(data:str):
     for i in data:
         if i.isdigit():
             s+=int(i)
-    return [s]
+    return s
         
     
 print(main(open('txt_file/data07.txt').read()))
