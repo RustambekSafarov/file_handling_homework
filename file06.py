@@ -6,5 +6,14 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    
+    d = 0
+    y = []
+    for i in data:
+        for x in i:
+            d += 1
+        y.append(d-1)
+        d = 0
+            
+    return y
 # Read data from file
+print(main(open('txt_file/data06.txt').readlines()))
